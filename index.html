@@ -172,6 +172,31 @@ footer{text-align:center;padding:28px 0;color:var(--muted);font-size:13px}
  .q1,.q2,.q3,.q4{grid-column:1;grid-row:auto}
 }
 @media (prefers-reduced-motion:reduce){.arc,.pulse{animation:none}}
+
+/* recommendations */
+.recs{background:var(--paper)}
+.rhead{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px;flex-wrap:wrap}
+.rsum{display:flex;gap:26px}
+.rsum b{display:block;font-size:30px;color:var(--accent);line-height:1}
+.rsum span{font-size:13px;color:var(--muted)}
+.recgrid{columns:3 300px;column-gap:20px}
+.rec{break-inside:avoid;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:26px 26px 22px;margin:0 0 20px;position:relative}
+.rec::before{content:"“";position:absolute;top:6px;right:20px;font-size:70px;line-height:1;color:#f0e2cc;font-weight:800}
+.rec blockquote{font-size:15.5px;color:#2f3a4b;line-height:1.65;margin-bottom:18px;position:relative}
+.rec.feat{background:var(--ink);border-color:var(--ink)}
+.rec.feat::before{color:#2c4166}
+.rec.feat blockquote{color:#fff;font-size:18px;line-height:1.6}
+.rec.feat b{color:#fff}.rec.feat span{color:#c9d3e3}
+.rec figcaption{display:flex;gap:12px;align-items:center;border-top:1px solid var(--line);padding-top:14px}
+.rec.feat figcaption{border-top-color:rgba(255,255,255,.15)}
+.av{flex:none;width:42px;height:42px;border-radius:50%;background:#fbf1e3;color:#8a4f12;display:grid;place-items:center;font-weight:700;font-size:14px}
+.rec.feat .av{background:var(--accent);color:var(--ink)}
+.rec figcaption b{display:block;font-size:15px}
+.rec figcaption span{display:block;font-size:12.5px;color:var(--muted);line-height:1.4}
+.rec figcaption em{display:inline-block;font-style:normal;font-size:11.5px;font-weight:600;color:var(--accent);margin-top:4px;text-transform:uppercase;letter-spacing:.05em}
+.rmore{text-align:center;margin-top:10px}
+.rmore a{color:var(--ink);font-weight:600;text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:2px}
+@media (max-width:560px){.rsum{gap:18px}.rsum b{font-size:24px}}
 /* reveal */
 .rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
 .rv.in{opacity:1;transform:none}
@@ -214,6 +239,7 @@ footer{text-align:center;padding:28px 0;color:var(--muted);font-size:13px}
    <li><a href="#experience">Experience</a></li>
    <li><a href="#markets">Markets</a></li>
    <li><a href="#expertise">Skills</a></li>
+   <li><a href="#recommendations">Recommendations</a></li>
    <li><a href="#education">Education</a></li>
    <li><a href="#contact">Contact</a></li>
   </ul>
@@ -389,6 +415,50 @@ footer{text-align:center;padding:28px 0;color:var(--muted);font-size:13px}
    <div class="q q3"><div class="qi">03</div><h3>Industry</h3><ul><li>Diesel gensets</li><li>Telecom power</li><li>Infrastructure power</li><li>Hybrid &amp; renewable-ready</li><li>Rental power</li></ul></div>
    <div class="q q4"><div class="qi">04</div><h3>Leadership</h3><ul><li>Cross-functional teams</li><li>Cross-cultural leadership</li><li>CXO &amp; board engagement</li><li>Export compliance</li><li>Trade finance</li></ul></div>
   </div>
+ </div>
+</section>
+
+<section class="recs" id="recommendations">
+ <div class="wrap">
+  <div class="rv rhead">
+   <div><div class="eyebrow">Recommendations</div><h2>What colleagues and clients say</h2></div>
+   <div class="rsum"><div><b>8</b><span>LinkedIn recommendations</span></div><div><b>3</b><span>from clients</span></div><div><b>3</b><span>from team members &amp; managers</span></div></div>
+  </div>
+  <div class="recgrid">
+   <figure class="rec rv feat">
+    <blockquote>“A highly creative professional with a flair for business development and customer relationship management. He has been highly involved and instrumental in implementation of strategic initiatives in world markets… His passion, energy and positivity is contagious.”</blockquote>
+    <figcaption><div class="av">SW</div><div><b>Shashank Watane</b><span>Sr. VP, International Business, Tirth Agro Tech</span><em>Managed Sandip directly · 2019</em></div></figcaption>
+   </figure>
+   <figure class="rec rv ">
+    <blockquote>“Sandip has been instrumental in guiding us to make Powerol a force to reckon with in Nepal… His interpersonal and leadership skills are unparalleled. He has always pushed us to stretch ourselves.”</blockquote>
+    <figcaption><div class="av">AR</div><div><b>Ahmad Raza</b><span>Group Bayport · formerly Moglix, Hero, Tata Motors, Mahindra</span><em>Reported to Sandip · 2014</em></div></figcaption>
+   </figure>
+   <figure class="rec rv ">
+    <blockquote>“He is one of the best techno commercial professional I have come across. With his ever smiling face and never say die attitude he makes every discussion into a pleasant and enjoyable experience.”</blockquote>
+    <figcaption><div class="av">AK</div><div><b>Ajay Khatri</b><span>AVP – SCM Projects</span><em>Client · 2015</em></div></figcaption>
+   </figure>
+   <figure class="rec rv ">
+    <blockquote>“He was instrumental in helping me acquire proficiency in International Business… In the process of market &amp; channel development in Nepal, he was closely involved in planning &amp; closing negotiations.”</blockquote>
+    <figcaption><div class="av">AP</div><div><b>Ameya Padhye</b><span>DGM – Digital Product Solutions, Tata Passenger Electric Mobility</span><em>Reported to Sandip · 2019</em></div></figcaption>
+   </figure>
+   <figure class="rec rv ">
+    <blockquote>“He has ably handled B2B sales, Exports, Channel Development and Product Planning responsibilities effectively… assuming operations responsibilities to ensure that customer expectations are met.”</blockquote>
+    <figcaption><div class="av">SK</div><div><b>Shashank Kotwal</b><span>Consultant · Strategy, Business Excellence &amp; Analytics</span><em>Senior colleague, Mahindra Powerol · 2016</em></div></figcaption>
+   </figure>
+   <figure class="rec rv ">
+    <blockquote>“Sandip is one of the highly motivated, customer focused &amp; supportive person I've worked with. He is vastly experienced in new business development &amp; negotiator in power business.”</blockquote>
+    <figcaption><div class="av">BC</div><div><b>Bharat Chandra Das</b><span>Head of IT Sourcing, Nagad</span><em>Client · 2017</em></div></figcaption>
+   </figure>
+   <figure class="rec rv ">
+    <blockquote>“Always self driven, problem solver and open to accept challenging tasks. A good colleague and subordinate who can be trusted for assured output.”</blockquote>
+    <figcaption><div class="av">JS</div><div><b>Janamjay Singh</b><span>Head – New Energy and E&amp;E Business, Kirloskar Oil Engines</span><em>Colleague at Elgi &amp; Mahindra · 2022</em></div></figcaption>
+   </figure>
+   <figure class="rec rv ">
+    <blockquote>“There was huge pressure for network rollout &amp; availability of material was challenge. Inspite of being into this situation I always get virtuous support… He is very down to earth &amp; always approachable for everyone.”</blockquote>
+    <figcaption><div class="av">GG</div><div><b>Gaurav Grover</b><span>Sr Pricing Manager, Digital Services</span><em>Telecom infrastructure partner · 2014</em></div></figcaption>
+   </figure>
+  </div>
+  <p class="rmore rv"><a href="https://www.linkedin.com/in/sandiptalapatra/details/recommendations/" target="_blank" rel="noopener">Read all recommendations in full on LinkedIn ↗</a></p>
  </div>
 </section>
 
